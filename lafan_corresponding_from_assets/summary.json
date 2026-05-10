@@ -1,0 +1,648 @@
+{
+  "num_requested": 77,
+  "num_ok": 34,
+  "num_skipped": 43,
+  "results": [
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/aiming1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/aiming1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/aiming1_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/aiming1_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/aiming2_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/aiming2_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/aiming2_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/aiming2_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/aiming2_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/aiming2_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance1_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance1_subject1.csv",
+      "num_frames": 3945.0,
+      "root_translate_z_min_cm": 28.8159,
+      "root_translate_z_max_cm": 84.2037,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance1_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance1_subject2.csv",
+      "num_frames": 3945.0,
+      "root_translate_z_min_cm": 41.0397,
+      "root_translate_z_max_cm": 84.6065,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance1_subject3.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance1_subject3.csv",
+      "num_frames": 3945.0,
+      "root_translate_z_min_cm": 61.0842,
+      "root_translate_z_max_cm": 83.777,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance1_subject3.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance2_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance2_subject1.csv",
+      "num_frames": 6771.0,
+      "root_translate_z_min_cm": 39.704299999999996,
+      "root_translate_z_max_cm": 88.10719999999999,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance2_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance2_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance2_subject2.csv",
+      "num_frames": 6771.0,
+      "root_translate_z_min_cm": 50.9491,
+      "root_translate_z_max_cm": 86.9597,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance2_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance2_subject3.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance2_subject3.csv",
+      "num_frames": 6771.0,
+      "root_translate_z_min_cm": 62.0225,
+      "root_translate_z_max_cm": 87.8866,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance2_subject3.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance2_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance2_subject4.csv",
+      "num_frames": 6771.0,
+      "root_translate_z_min_cm": 12.696,
+      "root_translate_z_max_cm": 88.5153,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance2_subject4.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/dance2_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/dance2_subject5.csv",
+      "num_frames": 6771.0,
+      "root_translate_z_min_cm": 60.777499999999996,
+      "root_translate_z_max_cm": 87.6759,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/dance2_subject5.bvh"
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp1_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp1_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp1_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp1_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp2_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp2_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp2_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp2_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fallAndGetUp3_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fallAndGetUp3_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/fight1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fight1_subject2.csv",
+      "num_frames": 7347.0,
+      "root_translate_z_min_cm": 41.9777,
+      "root_translate_z_max_cm": 92.6556,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fight1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/fight1_subject3.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fight1_subject3.csv",
+      "num_frames": 7347.0,
+      "root_translate_z_min_cm": 18.2068,
+      "root_translate_z_max_cm": 91.2489,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fight1_subject3.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/fight1_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fight1_subject5.csv",
+      "num_frames": 7347.0,
+      "root_translate_z_min_cm": 57.4358,
+      "root_translate_z_max_cm": 91.00399999999999,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fight1_subject5.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/fightAndSports1_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fightAndSports1_subject1.csv",
+      "num_frames": 7355.0,
+      "root_translate_z_min_cm": 24.1221,
+      "root_translate_z_max_cm": 90.82329999999999,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fightAndSports1_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/fightAndSports1_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/fightAndSports1_subject4.csv",
+      "num_frames": 7355.0,
+      "root_translate_z_min_cm": 46.1397,
+      "root_translate_z_max_cm": 96.5398,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/fightAndSports1_subject4.bvh"
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/ground1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/ground1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/ground1_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/ground1_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/ground1_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/ground1_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/ground2_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/ground2_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/ground2_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/ground2_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/jumps1_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/jumps1_subject1.csv",
+      "num_frames": 7334.0,
+      "root_translate_z_min_cm": 55.5741,
+      "root_translate_z_max_cm": 91.2012,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/jumps1_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/jumps1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/jumps1_subject2.csv",
+      "num_frames": 7334.0,
+      "root_translate_z_min_cm": 3.7207999999999997,
+      "root_translate_z_max_cm": 85.2529,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/jumps1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/jumps1_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/jumps1_subject5.csv",
+      "num_frames": 7334.0,
+      "root_translate_z_min_cm": 59.5493,
+      "root_translate_z_max_cm": 87.1816,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/jumps1_subject5.bvh"
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/multipleActions1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/multipleActions1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/multipleActions1_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/multipleActions1_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/multipleActions1_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/multipleActions1_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/multipleActions1_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/multipleActions1_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles1_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles1_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles1_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles1_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles2_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles2_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles2_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles2_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles2_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles2_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles3_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles3_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles3_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles3_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles4_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles4_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles4_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles4_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles4_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles4_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles5_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles5_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles5_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles5_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles5_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles5_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles6_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles6_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles6_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles6_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/obstacles6_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/obstacles6_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/push1_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/push1_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/pushAndFall1_subject1.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/pushAndFall1_subject1.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/pushAndFall1_subject4.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/pushAndFall1_subject4.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/pushAndStumble1_subject2.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/pushAndStumble1_subject2.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/pushAndStumble1_subject3.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/pushAndStumble1_subject3.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "skipped",
+      "method": "unavailable",
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/pushAndStumble1_subject5.bvh",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/pushAndStumble1_subject5.csv",
+      "message": "No matching Genesis-Humanoid/assets/lafan CSV exists, and direct SOMA retarget is disabled because the raw LAFAN skeleton is not native SOMA."
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/run1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/run1_subject2.csv",
+      "num_frames": 7135.0,
+      "root_translate_z_min_cm": 54.03980000000001,
+      "root_translate_z_max_cm": 84.7695,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/run1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/run1_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/run1_subject5.csv",
+      "num_frames": 7135.0,
+      "root_translate_z_min_cm": 55.95290000000001,
+      "root_translate_z_max_cm": 86.2423,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/run1_subject5.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/run2_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/run2_subject1.csv",
+      "num_frames": 7345.0,
+      "root_translate_z_min_cm": 52.2855,
+      "root_translate_z_max_cm": 80.5282,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/run2_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/run2_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/run2_subject4.csv",
+      "num_frames": 7345.0,
+      "root_translate_z_min_cm": 52.101,
+      "root_translate_z_max_cm": 82.81530000000001,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/run2_subject4.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/sprint1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/sprint1_subject2.csv",
+      "num_frames": 8194.0,
+      "root_translate_z_min_cm": 57.6345,
+      "root_translate_z_max_cm": 85.5026,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/sprint1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/sprint1_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/sprint1_subject4.csv",
+      "num_frames": 8194.0,
+      "root_translate_z_min_cm": 55.2721,
+      "root_translate_z_max_cm": 81.3049,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/sprint1_subject4.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk1_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk1_subject1.csv",
+      "num_frames": 7840.0,
+      "root_translate_z_min_cm": 63.20440000000001,
+      "root_translate_z_max_cm": 81.5221,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk1_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk1_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk1_subject2.csv",
+      "num_frames": 7840.0,
+      "root_translate_z_min_cm": 67.54010000000001,
+      "root_translate_z_max_cm": 79.7146,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk1_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk1_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk1_subject5.csv",
+      "num_frames": 7840.0,
+      "root_translate_z_min_cm": 62.191300000000005,
+      "root_translate_z_max_cm": 80.6047,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk1_subject5.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk2_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk2_subject1.csv",
+      "num_frames": 7146.0,
+      "root_translate_z_min_cm": 42.0953,
+      "root_translate_z_max_cm": 85.2754,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk2_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk2_subject3.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk2_subject3.csv",
+      "num_frames": 7146.0,
+      "root_translate_z_min_cm": 32.3328,
+      "root_translate_z_max_cm": 85.9067,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk2_subject3.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk2_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk2_subject4.csv",
+      "num_frames": 7146.0,
+      "root_translate_z_min_cm": 54.2479,
+      "root_translate_z_max_cm": 85.378,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk2_subject4.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk3_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk3_subject1.csv",
+      "num_frames": 7399.0,
+      "root_translate_z_min_cm": 11.0301,
+      "root_translate_z_max_cm": 81.3852,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk3_subject1.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk3_subject2.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk3_subject2.csv",
+      "num_frames": 7399.0,
+      "root_translate_z_min_cm": 65.22,
+      "root_translate_z_max_cm": 79.5033,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk3_subject2.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk3_subject3.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk3_subject3.csv",
+      "num_frames": 7399.0,
+      "root_translate_z_min_cm": 33.6218,
+      "root_translate_z_max_cm": 86.3595,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk3_subject3.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk3_subject4.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk3_subject4.csv",
+      "num_frames": 7399.0,
+      "root_translate_z_min_cm": 4.5574,
+      "root_translate_z_max_cm": 80.6695,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk3_subject4.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk3_subject5.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk3_subject5.csv",
+      "num_frames": 7399.0,
+      "root_translate_z_min_cm": 55.732899999999994,
+      "root_translate_z_max_cm": 79.1815,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk3_subject5.bvh"
+    },
+    {
+      "status": "ok",
+      "method": "genesis_asset_to_soma_csv",
+      "input_csv": "/home/lanlan/humanlike_robot_rl/Genesis-Humanoid/assets/lafan/walk4_subject1.csv",
+      "output_csv": "/home/lanlan/humanlike_robot_rl/homework3/outputs/lafan_corresponding_from_assets/g1_csv/walk4_subject1.csv",
+      "num_frames": 4918.0,
+      "root_translate_z_min_cm": 56.4773,
+      "root_translate_z_max_cm": 79.9435,
+      "source_bvh": "/home/lanlan/humanlike_robot_rl/ubisoft-laforge-animation-dataset/lafan1/bvh/walk4_subject1.bvh"
+    }
+  ]
+}
