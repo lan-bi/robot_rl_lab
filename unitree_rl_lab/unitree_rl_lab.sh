@@ -2,6 +2,10 @@
 
 export UNITREE_RL_LAB_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+if [[ -z "${ISAACLAB_PATH}" && -d "${UNITREE_RL_LAB_PATH}/../IsaacLab" ]]; then
+    export ISAACLAB_PATH="$( cd "${UNITREE_RL_LAB_PATH}/../IsaacLab" &> /dev/null && pwd )"
+fi
+
 if ! [[ -z "${CONDA_PREFIX}" ]]; then
     python_exe=${CONDA_PREFIX}/bin/python
 else
@@ -78,11 +82,11 @@ case "$1" in
         ;;
     -p|--play)
         shift
-        ${python_exe} ${UNITREE_RL_LAB_PATH}/scripts/rsl_rl/play.py "$@"
+        ${ISAACLAB_PATH}/isaaclab.sh -p ${UNITREE_RL_LAB_PATH}/scripts/rsl_rl/play.py "$@"
         ;;
     -t|--train)
         shift
-        ${python_exe} ${UNITREE_RL_LAB_PATH}/scripts/rsl_rl/train.py --headless "$@"
+        ${ISAACLAB_PATH}/isaaclab.sh -p ${UNITREE_RL_LAB_PATH}/scripts/rsl_rl/train.py --headless "$@"
         ;;
     *) # unknown option
         ;;

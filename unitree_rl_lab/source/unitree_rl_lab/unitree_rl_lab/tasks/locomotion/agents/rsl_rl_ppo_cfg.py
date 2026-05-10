@@ -4,7 +4,31 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 from isaaclab.utils import configclass
-from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
+from isaaclab_rl.rsl_rl.rl_cfg import RslRlOnPolicyRunnerCfg, RslRlPpoAlgorithmCfg
+
+
+@configclass
+class GaussianDistributionCfg:
+    class_name = "GaussianDistribution"
+    init_std = 1.0
+    std_type = "scalar"
+
+
+@configclass
+class ActorCfg:
+    class_name = "MLPModel"
+    hidden_dims = [512, 256, 128]
+    activation = "elu"
+    obs_normalization = False
+    distribution_cfg = GaussianDistributionCfg()
+
+
+@configclass
+class CriticCfg:
+    class_name = "MLPModel"
+    hidden_dims = [512, 256, 128]
+    activation = "elu"
+    obs_normalization = False
 
 
 @configclass
@@ -14,12 +38,9 @@ class BasePPORunnerCfg(RslRlOnPolicyRunnerCfg):
     save_interval = 100
     experiment_name = ""  # same as task name
     empirical_normalization = False
-    policy = RslRlPpoActorCriticCfg(
-        init_noise_std=1.0,
-        actor_hidden_dims=[512, 256, 128],
-        critic_hidden_dims=[512, 256, 128],
-        activation="elu",
-    )
+    obs_groups = {"actor": ["policy"], "critic": ["critic"]}
+    actor = ActorCfg()
+    critic = CriticCfg()
     algorithm = RslRlPpoAlgorithmCfg(
         value_loss_coef=1.0,
         use_clipped_value_loss=True,

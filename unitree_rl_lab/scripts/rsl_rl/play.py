@@ -9,6 +9,7 @@
 
 import argparse
 from importlib.metadata import version
+from types import SimpleNamespace
 
 from isaaclab.app import AppLauncher
 
@@ -56,8 +57,8 @@ import isaaclab_tasks  # noqa: F401
 from isaaclab.envs import DirectMARLEnv, multi_agent_to_single_agent
 from isaaclab.utils.assets import retrieve_file_path
 from isaaclab.utils.dict import print_dict
-from isaaclab.utils.pretrained_checkpoint import get_published_pretrained_checkpoint
 from isaaclab_rl.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlVecEnvWrapper, export_policy_as_jit, export_policy_as_onnx
+from isaaclab_rl.utils.pretrained_checkpoint import get_published_pretrained_checkpoint
 from isaaclab_tasks.utils import get_checkpoint_path
 
 import unitree_rl_lab.tasks  # noqa: F401
@@ -129,17 +130,46 @@ def main():
     # obtain the trained policy for inference
     policy = runner.get_inference_policy(device=env.unwrapped.device)
 
-    # extract the neural network module
+    # extract the neural network module/container used for export
     # we do this in a try-except to maintain backwards compatibility.
     try:
-        # version 2.3 onwards
-        policy_nn = runner.alg.policy
+        # rsl-rl >= 5.0.0
+        policy_nn = runner.alg.get_policy()
+        policy_export = SimpleNamespace(actor=runner.alg.actor, is_recurrent=getattr(runner.alg, "is_recurrent", False))
+        if hasattr(runner.alg, "student"):
+            policy_export.student = runner.alg.student
+        if hasattr(runner.alg, "memory_a"):
+            policy_export.memory_a = runner.alg.memory_a
+        if hasattr(runner.alg, "memory_s"):
+            policy_export.memory_s = runner.alg.memory_s
     except AttributeError:
-        # version 2.2 and below
-        policy_nn = runner.alg.actor_critic
+        try:
+            # version 2.3 onwards
+            policy_nn = runner.alg.policy
+            policy_export = SimpleNamespace(
+                actor=runner.alg.policy.actor,
+                is_recurrent=getattr(runner.alg.policy, "is_recurrent", False),
+            )
+            if hasattr(runner.alg.policy, "memory_a"):
+                policy_export.memory_a = runner.alg.policy.memory_a
+        except AttributeError:
+            # version 2.2 and below
+            policy_nn = runner.alg.actor_critic
+            policy_export = SimpleNamespace(
+                actor=runner.alg.actor_critic.actor,
+                is_recurrent=getattr(runner.alg.actor_critic, "is_recurrent", False),
+            )
+            if hasattr(runner.alg.actor_critic, "memory_a"):
+                policy_export.memory_a = runner.alg.actor_critic.memory_a
 
     # extract the normalizer
-    if hasattr(policy_nn, "actor_obs_normalizer"):
+    if hasattr(policy_export, "actor") and hasattr(policy_export.actor, "obs_normalizer"):
+        normalizer = policy_export.actor.obs_normalizer
+    elif hasattr(policy_export, "student") and hasattr(policy_export.student, "obs_normalizer"):
+        normalizer = policy_export.student.obs_normalizer
+    elif hasattr(policy_nn, "obs_normalizer"):
+        normalizer = policy_nn.obs_normalizer
+    elif hasattr(policy_nn, "actor_obs_normalizer"):
         normalizer = policy_nn.actor_obs_normalizer
     elif hasattr(policy_nn, "student_obs_normalizer"):
         normalizer = policy_nn.student_obs_normalizer
@@ -148,8 +178,11 @@ def main():
 
     # export policy to onnx/jit
     export_model_dir = os.path.join(os.path.dirname(resume_path), "exported")
-    export_policy_as_jit(policy_nn, normalizer=normalizer, path=export_model_dir, filename="policy.pt")
-    export_policy_as_onnx(policy_nn, normalizer=normalizer, path=export_model_dir, filename="policy.onnx")
+    try:
+        export_policy_as_jit(policy_export, normalizer=normalizer, path=export_model_dir, filename="policy.pt")
+        export_policy_as_onnx(policy_export, normalizer=normalizer, path=export_model_dir, filename="policy.onnx")
+    except Exception as exc:
+        print(f"[WARN] Skipping policy export: {exc}")
 
     dt = env.unwrapped.step_dt
 

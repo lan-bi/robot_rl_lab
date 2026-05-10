@@ -40,7 +40,14 @@ inline struct SimulationConfig
             joystick_device = cfg["joystick_device"].as<std::string>();
             joystick_bits = cfg["joystick_bits"].as<int>();
             print_scene_information = cfg["print_scene_information"].as<int>();
-            enable_elastic_band = cfg["enable_elastic_band"].as<int>();
+            if (cfg["enable_elastic_hand"])
+            {
+                enable_elastic_band = cfg["enable_elastic_hand"].as<int>();
+            }
+            else
+            {
+                enable_elastic_band = cfg["enable_elastic_band"].as<int>();
+            }
         }
         catch(const std::exception& e)
         {

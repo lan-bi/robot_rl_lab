@@ -59,8 +59,17 @@ def _walk_packages(
 def import_packages():
     sys.path.insert(0, f"{pathlib.Path(__file__).parent.parent}/source/unitree_rl_lab/unitree_rl_lab/tasks/")
     for package in ["locomotion.robots", "mimic.robots"]:
-        package = importlib.import_module(package)
-        for _ in _walk_packages(package.__path__, package.__name__ + "."):
+        try:
+            package = importlib.import_module(package)
+        except Exception as exc:
+            print(f"Skipping {package}: {exc}")
+            continue
+
+        for _ in _walk_packages(
+            package.__path__,
+            package.__name__ + ".",
+            onerror=lambda name: print(f"Skipping {name}: import failed"),
+        ):
             pass
     sys.path.pop(0)
 
