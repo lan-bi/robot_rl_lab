@@ -19,6 +19,9 @@ from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR, ISAACLAB_NUCLEUS_DIR
 from isaaclab.utils.noise import AdditiveUniformNoiseCfg as Unoise
 
 from robotlib.beyondMimic.robots.g1 import G1_CYLINDER_CFG
+from robotlib.robot_keys.g1_29d import g1_key_body_names
+
+from beyondAMP.obs_groups import AMPObsBodyHardTrackCfg
 from ... import mdp
 
 COBBLESTONE_ROAD_CFG = terrain_gen.TerrainGeneratorCfg(
@@ -392,3 +395,15 @@ class RobotPlayEnvCfg(RobotEnvCfg):
         self.scene.terrain.terrain_generator.num_rows = 2
         self.scene.terrain.terrain_generator.num_cols = 10
         self.commands.base_velocity.ranges = self.commands.base_velocity.limit_ranges
+
+
+@configclass
+class G1VelocityAMPEnvCfg(RobotEnvCfg):
+    """AMP-ready G1 velocity environment configuration."""
+
+    def __post_init__(self):
+        super().__post_init__()
+        self.observations.amp = AMPObsBodyHardTrackCfg().adjust_key_body_indexes(
+            ["body_pos_w", "body_quat_w", "body_lin_vel_w", "body_ang_vel_w"],
+            g1_key_body_names,
+        )

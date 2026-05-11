@@ -1,10 +1,10 @@
 from isaaclab.utils import configclass
 from beyondAMP.isaaclab.rsl_rl.configs.rl_cfg import RslRlOnPolicyRunnerCfg, RslRlPpoActorCriticCfg, RslRlPpoAlgorithmCfg
-from beyondAMP.isaaclab.rsl_rl.configs.amp_cfg import MotionDatasetCfg, AMPObsBaiscCfg, AMPPPOAlgorithmCfg, AMPRunnerCfg
+from beyondAMP.isaaclab.rsl_rl.configs.amp_cfg import MotionDatasetCfg, AMPPPOWeightedAlgorithmCfg, AMPRunnerCfg
 
 from robotlib.robot_keys.g1_29d import g1_key_body_names, g1_anchor_name
 
-from beyondAMP.obs_groups import AMPObsBaiscTerms
+from beyondAMP.obs_groups import AMPObsHardTrackTerms
 
 from amp_tasks.amp_task_demo_data_cfg import velocity_task_files
 
@@ -41,7 +41,7 @@ class BasePPORunnerCfg(RslRlOnPolicyRunnerCfg):
 @configclass
 class G1FlatAMPRunnerCfg(AMPRunnerCfg):
     num_steps_per_env = 24
-    max_iterations = 5000
+    max_iterations = 10000
     save_interval = 500
     experiment_name = "g1_loco"
     run_name = "amp"
@@ -52,8 +52,7 @@ class G1FlatAMPRunnerCfg(AMPRunnerCfg):
         critic_hidden_dims=[512, 256, 128],
         activation="elu",
     )
-    algorithm = AMPPPOAlgorithmCfg(
-        class_name="AMPPPO",
+    algorithm = AMPPPOWeightedAlgorithmCfg(
         value_loss_coef=1.0,
         use_clipped_value_loss=True,
         clip_param=0.2,
@@ -66,13 +65,14 @@ class G1FlatAMPRunnerCfg(AMPRunnerCfg):
         lam=0.95,
         desired_kl=0.01,
         max_grad_norm=1.0,
+        rescore_interval=100,
     )
     amp_data = MotionDatasetCfg(
         motion_files=velocity_task_files,
         body_names = g1_key_body_names,
-        amp_obs_terms = AMPObsBaiscTerms,
-        anchor_name=g1_anchor_name
+        anchor_name = g1_anchor_name,
+        amp_obs_terms = AMPObsHardTrackTerms,
     )
     amp_discr_hidden_dims = [256, 256]
-    amp_reward_coef = 0.5
-    amp_task_reward_lerp = 0.3
+    amp_reward_coef = 1.0
+    amp_task_reward_lerp = 0.1

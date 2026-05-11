@@ -103,14 +103,22 @@ class MotionLoader:
 
     def _load_motion(self):
         """Loads the motion from the csv file."""
+        # Some CSV exports include a header row (e.g. "Frame,root_translateX,...").
+        # Detect it automatically so the converter works with both headered and
+        # headerless motion CSVs.
+        with open(self.motion_file, "r", encoding="utf-8") as f:
+            first_line = f.readline().strip()
+        has_header = any(ch.isalpha() for ch in first_line)
+        header_rows = 1 if has_header else 0
+
         if self.frame_range is None:
-            motion = torch.from_numpy(np.loadtxt(self.motion_file, delimiter=","))
+            motion = torch.from_numpy(np.loadtxt(self.motion_file, delimiter=",", skiprows=header_rows))
         else:
             motion = torch.from_numpy(
                 np.loadtxt(
                     self.motion_file,
                     delimiter=",",
-                    skiprows=self.frame_range[0] - 1,
+                    skiprows=header_rows + self.frame_range[0] - 1,
                     max_rows=self.frame_range[1] - self.frame_range[0] + 1,
                 )
             )

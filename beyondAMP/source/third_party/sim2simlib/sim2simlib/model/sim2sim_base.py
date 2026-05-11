@@ -250,7 +250,7 @@ class Sim2SimBaseModel(Sim2Sim):
         obs_tensor = torch.from_numpy(obs_np).unsqueeze(0)
         action = self.policy(obs_tensor).detach().numpy().squeeze()
         self.debug("[DEBUG] action:", action)
-        self.last_action[:] = action
+        self.last_action[:] = action[0]
         return action
     
     def process_action(self, policy_action: np.ndarray) -> np.ndarray:
@@ -258,7 +258,7 @@ class Sim2SimBaseModel(Sim2Sim):
         action = np.clip(action, *self._cfg.action_cfg.action_clip) 
         
         joint_pos_action = np.zeros_like(self.init_angles, dtype=np.float32)
-        joint_pos_action[self.act_maps] = action
+        joint_pos_action[self.act_maps] = action[0]
         joint_pos_action += self.init_angles
         return joint_pos_action
 
